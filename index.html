@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Fern & Fiction — a cozy cafe for coffee, books, and quiet moments.">
+
+    <title>Fern & Fiction | Coffee & Books</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header class="site-header">
+        <a class="logo" href="#home">
+            Fern <span>&</span> Fiction
+        </a>
+
+        <nav class="main-nav" aria-label="Main navigation">
+            <a href="#home" data-en="Home" data-fa="خانه">Home</a>
+            <a href="#story" data-en="Our Story" data-fa="داستان ما">Our Story</a>
+            <a href="#menu" data-en="Menu" data-fa="منو">Menu</a>
+            <a href="#visit" data-en="Visit Us" data-fa="تماس با ما">Visit Us</a>
+        </nav>
+
+        <button id="language-toggle" type="button" aria-label="Change language">
+            فارسی
+        </button>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <p class="eyebrow"
+               data-en="YOUR LITTLE CORNER OF CALM"
+               data-fa="گوشه‌ی کوچک دنج شما">
+                YOUR LITTLE CORNER OF CALM
+            </p>
+
+            <h1
+                data-en="Where coffee meets stories."
+                data-fa="آنجا که قهوه به داستان می‌رسد.">
+                Where coffee meets stories.
+            </h1>
+
+            <p class="hero-description"
+               data-en="Slow down, open a book, and stay a little longer."
+               data-fa="آرامش بگیر، کتابی باز کن و کمی بیشتر بمان.">
+                Slow down, open a book, and stay a little longer.
+            </p>
+
+            <a class="primary-button" href="#menu"
+               data-en="Explore Our Menu"
+               data-fa="منوی ما را ببین">
+                Explore Our Menu
+            </a>
+        </section>
+
+        <section class="story section" id="story">
+            <p class="eyebrow"
+               data-en="A PLACE TO UNWIND"
+               data-fa="جایی برای آرامش گرفتن">
+                A PLACE TO UNWIND
+            </p>
+
+            <h2
+                data-en="More than just a coffee shop."
+                data-fa="بیشتر از یک کافه">
+                More than just a coffee shop.
+            </h2>
+
+            <p
+                data-en="A cozy space for curious minds, good coffee, and stories worth sharing."
+                data-fa="فضایی دنج برای ذهن‌های کنجکاو، قهوه‌ی خوب و داستان‌هایی که ارزش به اشتراک گذاشتن دارن .">
+                A cozy space for curious minds, good coffee, and stories worth sharing.
+            </p>
+        </section>
+
+        <section class="menu-section section" id="menu">
+            <p class="eyebrow"
+               data-en="MADE WITH LOVE"
+               data-fa="آماده شده با عشق">
+                MADE WITH LOVE
+            </p>
+
+            <h2 data-en="A taste of comfort"
+                data-fa="طعم آرامش">
+                A taste of comfort
+            </h2>
+            
+            
+            <div class="menu-filters">
+                <button class="filter-btn active" data-filter="all"
+                    data-en="All" data-fa="همه">All</button>
+
+                <button class="filter-btn" data-filter="coffee"
+                    data-en="Coffee" data-fa="قهوه">Coffee</button>
+
+               <button class="filter-btn" data-filter="drinks"
+                    data-en="Other Drinks" data-fa="نوشیدنی‌ها">Other Drinks</button>
+
+               <button class="filter-btn" data-filter="desserts"
+                    data-en="Desserts" data-fa="دسرها">Desserts</button>
+            </div>
+
+            
+            <div class="menu-grid">
+                <article class="menu-card" data-category="coffee">
+                    <img
+                    src="images/americano.jpg.jpg"
+                    alt="A glass of Americano coffee"
+                    class="menu-image"
+        >
+                    <div class="menu-card-content">
+                                <h3>Americano</h3>
+                                <p
+                                    data-en="Simple, bold, timeless."
+                                    data-fa="ساده، قوی و همیشه دوست‌داشتنی."
+                                >Simple, bold, timeless.</p>
+                                <p class="menu-price">
+                                    <span data-en="$3.50" data-fa="۳۵۰ هزار تومان">$3.50</span>
+                                </p>
+                    </div>
+                </article>
+
+                <article class="menu-card" data-category="coffee">
+                    <img
+                        src="images/latte.jpg.jpg"
+                        alt="A cup of vanilla latte"
+                        class="menu-image"
+                    >
+                    <div class="menu-card-content">
+                        <h3>Vanilla Latte</h3>
+                        <p
+                           data-en="Smooth coffee with a hint of vanilla."
+                           data-fa="قهوه‌ای لطیف با عطر وانیل."
+                        >Smooth coffee with a hint of vanilla.</p>
+                        <p class="menu-price">
+                            <span data-en="$4.50" data-fa="۴۵۰ هزار تومان">$4.50</span>
+                        </p>
+                    </div>
+                </article>
+
+                <article class="menu-card" data-category="desserts">
+                    <img
+                        src="images/cake.jpg.jpg"
+                        alt="A slice of chocolate cake"
+                        class="menu-image"
+                    >
+                    <div class="menu-card-content">
+                        <h3>Chocolate Cake</h3>
+                        <p
+                            data-en="A little sweetness for your day."
+                            data-fa="کمی شیرینی برای روزت."
+                        >A little sweetness for your day.</p>
+                        <p class="menu-price">
+                            <span data-en="$4.00" data-fa="۴۰۰ هزار تومان">$4.00</span>
+                        </p>
+                    </div>
+                </article>
+            </div>
+
+        </section>
+
+        <section class="visit section" id="visit">
+            <h2 data-en="Come find your quiet corner."
+                data-fa="گوشه‌ی آرام خودت را پیدا کن.">
+                Come find your quiet corner.
+            </h2>
+
+            <p data-en="Your next favorite chapter starts here."
+               data-fa="فصل محبوب بعدی زندگیت از اینجا شروع میشه.">
+                Your next favorite chapter starts here.
+            </p>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>Fern & Fiction © 2026</p>
+        <p data-en="Coffee, books & quiet moments."
+           data-fa="قهوه، کتاب و لحظه‌های آرام">
+            Coffee, books & quiet moments.
+        </p>
+    </footer>
+</body>
+</html>
